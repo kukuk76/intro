@@ -1,0 +1,121 @@
+$mask:  lighten(lightgray,10);
+
+.global--loader {
+  position: fixed;
+  z-index: 80;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  .doors {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    .door {
+      background:$white;
+      width: 50vw;
+      position: absolute;
+      top:0;
+      height: 100%;
+      &:nth-child(1){
+        left:0;
+        transform-origin: 0 100%;
+      }
+      &:nth-child(2){
+        right:0;
+        transform-origin:100% 0;
+      }
+    }
+  }
+}
+
+.intro--wrapper {
+  width: 16rem;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height: 8rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .intro--mask {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 87;
+    bottom:0;
+    background: $mask;
+    transform-origin: bottom left;
+  }
+  @include tablet {
+    width: 32rem;
+    height: 20rem;
+  }
+}
+
+.intro--welcome {
+  position: relative;
+  overflow: hidden;
+  .mask {
+    height: 100%;
+    line-height: 1.25rem;
+    position: absolute;
+    top:0;
+    background: $mask;
+    left:0;
+    right:0;
+    z-index: 5;
+  }
+  .text {
+    position: relative;
+    z-index: 4;
+    display: block;
+  }
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top:50%;
+  z-index: 81;
+  left:50%;
+  background:$black;
+  display:flex;
+  margin: -2.5rem 0 0 -2.5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .text--overflow {
+    overflow: hidden;
+    line-height: 1;
+    height: 1rem;
+  }
+  p {
+    color:$white;
+    line-height: 1;
+    letter-spacing: -.055rem;
+  }
+  @include tablet {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: -3.25rem 0 0 -3.25rem;
+  }
+}
+
+
+.loading--wrapper {
+  text-align: center;
+  margin-top: 1rem;
+  p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+    color: $dark-gray !important;
+  }
+}

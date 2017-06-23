@@ -1,0 +1,26 @@
+.flexcolumn  {
+  lost-flex-container:column;
+}
+
+.flexrow {
+  lost-flex-container:row;
+}
+
+.yes {
+  font-size: em(48,16);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

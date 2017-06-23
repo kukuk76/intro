@@ -1,0 +1,103 @@
+// Reset some basic elements
+
+*, body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  -webkit-touch-callout: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $font-family;
+  background: $body;
+  color: $white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+// Heading vertical rhytme
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  text-transform: uppercase;
+  color:$black;
+  position: relative;
+  margin-bottom: $base-unit / 2;
+}
+
+h1 {
+  letter-spacing: 0.15rem;
+  font-size: 2rem;
+  font-family: 'Lato', sans;
+  letter-spacing: .25rem;
+  line-height: 1;
+  font-weight: $semi-font-weight;
+}
+
+h2 {
+  letter-spacing: 0.15rem;
+  color:darken($light-gray,24);
+  font-size: 1.15rem;
+  margin: 0;
+  letter-spacing: .25rem;
+  font-weight: $semi-font-weight;
+}
+
+figure,
+figure > img {
+  display: block;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display:block;
+  vertical-align: middle;
+}
+
+p {
+  font-weight: $medium-font-weight;
+  color: rgba($white, .15);
+}
+
+ul, ol, li, ul li {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color:$white;
+  outline:none;
+  text-decoration: none;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
