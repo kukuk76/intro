@@ -315,17 +315,22 @@ var globalSite = (function(){
      },'-=0.2');
 
      tl.staggerTo(doors, .6, {
-       scaleX:0,
+       scaleY:0,
        ease:Expo.easeOut
-     },0,'+=0.2');
+     },0.2,'+=0.2');
 
      tl.call(function(){
-      //  globalLoader.remove();
+       globalLoader.remove();
+       intro();
      });
 
      tl.play();
   }
 
+
+  var intro = function(){
+    
+  }
 
 
 
