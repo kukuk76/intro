@@ -91,11 +91,27 @@ $mask:  lighten(lightgray,10);
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  .text--overflow {
-    overflow: hidden;
-    line-height: 1;
-    height: 1rem;
+  .mask {
+    position: absolute;
+    top:0;
+    width: 50%;
+    z-index: 8;
+    background: $white;
+    height: 100%;
+    &:nth-child(1){
+      left:0;
+      transform-origin: 0 100%;
+    }
+    &:nth-child(2){
+      right:0;
+      transform-origin: 100% 0;
+    }
   }
+  // .text--overflow {
+  //   overflow: hidden;
+  //   line-height: 1;
+  //   height: 1rem;
+  // }
   p {
     color:$white;
     line-height: 1;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 263.53365 221.54736"
+   height="62.525589mm"
+   width="74.375053mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(735.10558,-329.74992)"
+     id="layer1">
+    <g
+       style="fill:#ffffff"
+       transform="translate(-492.45777,-52.230369)"
+       id="g4166">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect4156"
+         width="20"
+         height="219.98756"
+         x="-134.8232"
+         y="381.98029" />
+      <rect
+         y="-20.885841"
+         x="383.52765"
+         height="111.53365"
+         width="20"
+         id="rect4158"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+         transform="matrix(0,1,-1,0,0,0)" />
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect4160"
+         width="20"
+         height="83.553101"
+         x="439.52765"
+         y="-6.9052877" />
+      <rect
+         y="7.0947123"
+         x="439.52765"
+         height="83.553101"
+         width="20"
+         id="rect4162"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+         transform="matrix(0,1,-1,0,0,0)" />
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+         id="rect4164"
+         width="20"
+         height="83.553101"
+         x="583.52765"
+         y="159.09471" />
+    </g>
+  </g>
+</svg>

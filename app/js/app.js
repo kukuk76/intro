@@ -131,6 +131,7 @@ var globalSite = (function(){
      var introWrapper = globalLoader.find('.intro--wrapper'),
          introMask = introWrapper.find('.intro--mask'),
          square = globalLoader.find('.square'),
+         mask = square.find('.mask'),
          welcome = globalLoader.find('.intro--welcome'),
          welcomeText = welcome.find('h1 span.text'),
          welcomeMask = welcome.find('h1 span.mask'),
@@ -139,6 +140,10 @@ var globalSite = (function(){
          doors = globalLoader.find('.doors .door');
 
      square.hide();
+
+     mask.css( {
+       width:0
+     });
 
      square.find('.text--overflow p').css({
        opacity:0
@@ -200,7 +205,6 @@ var globalSite = (function(){
 
      tl.to(square, .6, {
        y:-180,
-       scale:0.8,
        ease:Expo.easeOut
      },'-=0.1');
 
@@ -264,6 +268,7 @@ var globalSite = (function(){
     var introWrapper = globalLoader.find('.intro--wrapper'),
         introMask = introWrapper.find('.intro--mask'),
         square = globalLoader.find('.square'),
+        mask = square.find('.mask'),
         welcome = globalLoader.find('.intro--welcome'),
         welcomeText = welcome.find('h1 span.text'),
         welcomeMask = welcome.find('h1 span.mask'),
@@ -273,6 +278,17 @@ var globalSite = (function(){
 
      var tl = new TimelineLite();
      tl.pause();
+
+     tl.staggerFromTo(mask,.5,{
+       width:0
+     },{
+       width:"50%",
+       ease:Expo.easeOut
+     },0);
+
+     tl.to(square, .1,{
+       opacity:0
+     },'+=.5');
 
      tl.to(loading.find('p'),.4, {
        y:10,
@@ -304,7 +320,7 @@ var globalSite = (function(){
      },0,'+=0.2');
 
      tl.call(function(){
-       globalLoader.remove();
+      //  globalLoader.remove();
      });
 
      tl.play();
